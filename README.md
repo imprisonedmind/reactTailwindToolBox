@@ -11,7 +11,7 @@ inline where I declare my component.
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
-```rfc```
+```fc```
 Creates a simple Functional Component - Uses current filename without extension
 ```javascript
 export default function FileName() {
@@ -22,7 +22,7 @@ export default function FileName() {
   );
 };
 ```
-```rtfc```
+```tfc```
 Creates a Functional Typed Component - Uses current filename without extension
 ```typescript jsx
 import {FC} from "react";
@@ -78,8 +78,8 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 <br/>
 
 ### React Native Shortcuts
-```rntfc```
-Creates a simple Functional Component - Uses current filename without extension
+```nwtfc```
+Creates a NativeWind Typed Functional Component - Uses current filename without extension
 ```typescript jsx
 import {FunctionComponent} from "react";
 import {View} from "react-native";
