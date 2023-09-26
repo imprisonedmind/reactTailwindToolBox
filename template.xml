@@ -1,0 +1,28 @@
+<templateSet group="lukesReactToolBoxLocal">
+    <template name="ftc" value="import React from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: React.FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};&#10;" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
+        <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="usee" value="useEffect(() =&gt; {&#10;    &#10;  },[])" description="Use Effect - on mount - no deps" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="af" value="const handleSomething = () =&gt; {&#10;    &#10;};" description="Arrow Function" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="uses" value="const [state, setState] = useState(null)" description="useState with no value" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="div" value="&lt;div className={`flex`}&gt;&#10;&#10;&lt;/div&gt;" description="Div with Tailwind Flex" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+</templateSet>
