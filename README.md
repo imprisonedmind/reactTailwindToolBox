@@ -1,4 +1,4 @@
-# Luke's React & Tailwind ToolBox
+# React & Tailwind ToolBox
 An opinionated React, NativeWind & Tailwind live template for IntelliJ products. <br/>
 These live templates are created in the way I like to use in my daily work
 flow, I prefer to have my types at the top of the file and I like to export 
