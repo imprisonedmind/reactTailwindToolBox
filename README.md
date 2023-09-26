@@ -10,16 +10,27 @@ inline where I declare my component.
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
+```fc```
+Creates a simple Functional Component - Uses current filename without extension
+```typescript
+export default function FileName() {
+  return (
+    <div className={``}>
+
+    </div>
+  );
+};
+```
 ```ftc```
 Creates a Functional Typed Component - Uses current filename without extension
 ```typescript
 import {FC} from "react";
 
-interface $FileName$Props {
+interface FileNameProps {
 	prop: string;
 }
 
-export const $FileName$: FC<$FileName$Props> = (props) => {
+export const FileName: FC<FileNameProps> = (props) => {
   const { prop } = props;
 
   return (
