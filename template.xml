@@ -1,5 +1,5 @@
 <templateSet group="lukesReactToolBox">
-    <template name="ftc" value="import {FC} from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
+    <template name="rtfc" value="import {FC} from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="JAVA_SCRIPT" value="true" />
@@ -20,7 +20,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="div" value="&lt;div className={`flex`}&gt;&#10;&#10;&lt;/div&gt;" description="Div with Tailwind Flex" toReformat="false" toShortenFQNames="true">
+    <template name="twdiv" value="&lt;div className={`flex`}&gt;&#10;&#10;&lt;/div&gt;" description="Div with Tailwind Flex" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
@@ -53,18 +53,40 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="row" value="&lt;div className={`flex flex-row gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates a Tailwind row" toReformat="false" toShortenFQNames="true">
+    <template name="twrow" value="&lt;div className={`flex flex-row gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates a Tailwind row" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="col" value="&lt;div className={`flex flex-col gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates  a Tailwind column" toReformat="false" toShortenFQNames="true">
+    <template name="twcol" value="&lt;div className={`flex flex-col gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates  a Tailwind column" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="fc" value="export default function $ComponentName$() {&#10;  return (&#10;    &lt;div className={``}&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};" description="Creates a simple Functional Component" toReformat="false" toShortenFQNames="true">
+    <template name="rfc" value="export default function $ComponentName$() {&#10;  return (&#10;    &lt;div className={``}&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};" description="Creates a simple Functional Component" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwtfc" value="import {FunctionComponent} from &quot;react&quot;;&#10;import {View, Text} from &quot;react-native&quot;;&#10;&#10;interface OwnProps {&#10;  prop: string;&#10;}&#10;&#10;type Props = OwnProps;&#10;&#10;export const $ComponentName$: FunctionComponent&lt;Props&gt; = (props) =&gt; {&#10;  const {prop} = props&#10;&#10;  return (&#10;  &lt;View className={``}&gt;&#10;&#10;  &lt;/View&gt;&#10;  );&#10;};" description="Creates a NativeWind Type Functional Component" toReformat="false" toShortenFQNames="true">
+        <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwfc" value="import {View, Text} from &quot;react-native&quot;;&#10;&#10;export default function $ComponentName$() {&#10;&#9;return (&#10;&#9;&#9;&lt;View className={``}&gt;&#10;&#10;&#9;&#9;&lt;/View&gt;&#10;&#9;);&#10;};" description="Creates  a simple NativeWind Functional Component" toReformat="false" toShortenFQNames="true">
+        <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwview" value="&lt;View className={``}&gt;&#10;&#10;&lt;/View&gt;" description="Creates a NativeWind View with className" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwtext" value="&lt;Text className={``}&gt;&#10;&#10;&lt;/Text&gt;" description="Creates a NativeWind Text with classNames" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
