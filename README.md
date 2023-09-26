@@ -171,19 +171,19 @@ Creates a styled column
 
 </div>
 ```
-```ilt```
+```twlt```
 Creates an ```in line TERNARY``` operation for ```class``` styling based
 on a ```value```
 ```tsx
 ${value ? "" : ""}
 ```
-```ilor```
+```twor```
 Creates an ```in line OR``` operation for ```class``` styling based on a ```nullable
 value```
 ```tsx
 ${value || ""}
 ```
-```ila```
+```twa```
 Creates an ```in line AND``` operation for ```class``` styling based on a ```value```
 ```tsx
 ${value && ""}
