@@ -5,7 +5,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="usee" value="useEffect(() =&gt; {&#10;    &#10;  },[])" description="Use Effect - on mount - no deps" toReformat="false" toShortenFQNames="true">
+    <template name="usee" value="useEffect(() =&gt; {&#10;&#10;},[])" description="Use Effect - on mount - no deps" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
@@ -25,29 +25,29 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="turn" value="{value ? (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;) : (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;)}" description="Creates a styled Ternary operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
+    <template name="rtern" value="{value ? (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;) : (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;)}" description="Creates a styled Ternary operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="and" value="{value &amp;&amp; (&lt;div className={``}&gt;&lt;/div&gt;)}" description="Creates a styled AND operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
+    <template name="rand" value="{value &amp;&amp; (&lt;div className={``}&gt;&lt;/div&gt;)}" description="Creates a styled AND operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="ilt" value="${value ? &quot;&quot; : &quot;&quot;}" description="Crates an Inline Turnary for class styling based on value" toReformat="false" toShortenFQNames="true">
-        <context>
-            <option name="HTML" value="true" />
-            <option name="JAVA_SCRIPT" value="true" />
-        </context>
-    </template>
-    <template name="ilor" value="${value || &quot;&quot;}" description="Creates an inline OR operation for class styling based on a nullable values" toReformat="false" toShortenFQNames="true">
+    <template name="twtern" value="${value ? &quot;&quot; : &quot;&quot;}" description="Crates an Inline Turnary for class styling based on value" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="HTML" value="true" />
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="ila" value="${value &amp;&amp; &quot;&quot;}" description="Creates and inline AND operation for class styling based on a value" toReformat="false" toShortenFQNames="true">
+    <template name="twor" value="${value || &quot;&quot;}" description="Creates an inline OR operation for class styling based on a nullable values" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML" value="true" />
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="twand" value="${value &amp;&amp; &quot;&quot;}" description="Creates and inline AND operation for class styling based on a value" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="HTML" value="true" />
             <option name="JAVA_SCRIPT" value="true" />
@@ -69,7 +69,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="nwtfc" value="import {FunctionComponent} from &quot;react&quot;;&#10;import {View, Text} from &quot;react-native&quot;;&#10;&#10;interface OwnProps {&#10;  prop: string;&#10;}&#10;&#10;type Props = OwnProps;&#10;&#10;export const $ComponentName$: FunctionComponent&lt;Props&gt; = (props) =&gt; {&#10;  const {prop} = props&#10;&#10;  return (&#10;  &lt;View className={``}&gt;&#10;&#10;  &lt;/View&gt;&#10;  );&#10;};" description="Creates a NativeWind Type Functional Component" toReformat="false" toShortenFQNames="true">
+    <template name="nwtfc" value="import {FunctionComponent} from &quot;react&quot;;&#10;import {View, Text} from &quot;react-native&quot;;&#10;&#10;interface OwnProps {&#10;  prop: string;&#10;}&#10;&#10;type Props = OwnProps;&#10;&#10;export const $ComponentName$: FunctionComponent&lt;Props&gt; = (props) =&gt; {&#10;  const {prop} = props&#10;&#10;  return (&#10;    &lt;View className={``}&gt;&#10;&#10;    &lt;/View&gt;&#10;  );&#10;};" description="Creates a NativeWind Type Functional Component" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="JAVA_SCRIPT" value="true" />
@@ -87,6 +87,16 @@
         </context>
     </template>
     <template name="nwtext" value="&lt;Text className={``}&gt;&#10;&#10;&lt;/Text&gt;" description="Creates a NativeWind Text with classNames" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwtern" value="{value ? (&#10;  &lt;View className={``}&gt;&lt;/View&gt;&#10;) : (&#10;  &lt;View className={``}&gt;&lt;/View&gt;&#10;)}" description="Creates a NativeWind Ternary Opration for &lt;View&gt;" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="nwand" value="{value &amp;&amp; (&lt;View className={``}&gt;&lt;/View&gt;)}" description="Crreated a NativeWind AND Operation for &lt;View&gt;" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
