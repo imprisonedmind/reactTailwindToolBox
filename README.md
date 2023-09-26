@@ -7,7 +7,7 @@ inline where I declare my component.
 <br/>
 
 [React Shortcuts](#react-shortcuts) |
-[NativeWind Shortcuts](#react-native-shortcuts) |
+[NativeWind Shortcuts](#native-wind-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
@@ -77,7 +77,7 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 
 <br/>
 
-### React Native Shortcuts
+### Native Wind Shortcuts
 ```nwtfc```
 Creates a NativeWind Typed Functional Component - Uses current filename without extension
 ```typescript jsx
