@@ -2,10 +2,9 @@
 An opinionated React & Tailwind live template for IntelliJ products. <br/>
 These live templates are created in the way I like to use in my daily work
 flow, I prefer to have my types at the top of the file and I like to export 
-inline where I declare my component. 
+inline where I declare my component.
 
 <br/>
-
 
 [React Shortcuts](#react-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
@@ -30,17 +29,11 @@ export const $ComponentName$: React.FC<$ComponentName$Props> = (props) => {
   );
 };
 ```
-
-<br/>
-
 ```uses```
 Creates a useState with a null value
 ```typescript
 const [state, setState] = useState(null)
 ```
-
-<br/>
-
 ```usee```
 Creates a styled useEffect with no deps
 ```typescript
@@ -48,9 +41,6 @@ useEffect(() => {
     
 },[])
 ```
-
-<br/>
-
 ```af```
 Creates a styled arrow function
 ```typescript
@@ -58,10 +48,40 @@ const handleSomething = () => {
 
 };
 ```
+```turn```
+Creates a styled ```TERNARY``` operation for ```<div>``` rendering
+```tsx
+{value ? (
+  <div className={``}></div>
+) : (
+  <div className={``}></div>
+)}
+```
+```and```
+Creates a styled ```AND``` operation for ```<div>``` rendering
+```tsx
+{value && (<div className={``}></div>)}
+```
 
 <br/>
 
 ### Tailwind Shortcuts
+```ilt```
+Creates an in line ```TERNARY``` operation for ```class``` styling based 
+on a ```value```
+```tsx
+${value ? "" : ""}
+```
+```ilor```
+Creates an in line ```OR``` operation for ```class``` styling based on a ```nullable value```
+```tsx
+${value || ""}
+```
+```ila```
+Creates an in line ```AND``` operation for ```class``` styling based on a ```value```
+```tsx
+${value && ""}
+```
 ```div```
 Creates a styled div with flex
 ```tsx
@@ -69,9 +89,6 @@ Creates a styled div with flex
 
 </div>
 ```
-
-<br/>
-
 ```row```
 Creates a styled row
 ```tsx
@@ -79,9 +96,6 @@ Creates a styled row
 
 </div>
 ```
-
-<br/>
-
 ```col```
 Creates a styled column
 ```tsx
