@@ -78,11 +78,24 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 <br/>
 
 ### Native Wind Shortcuts
+```nwfc```
+Creates a NativeWind Simple Functional Component - Uses current filename without extension
+```javascript jsx
+import {View, Text} from "react-native";
+
+export default function TestFile() {
+  return (
+    <View className={``}>
+
+    </View>
+  );
+};
+```
 ```nwtfc```
 Creates a NativeWind Typed Functional Component - Uses current filename without extension
 ```typescript jsx
 import {FunctionComponent} from "react";
-import {View} from "react-native";
+import {View, Text} from "react-native";
 
 interface OwnProps {
   prop: string;
@@ -94,13 +107,12 @@ export const ComponentName: FunctionComponent<Props> = (props) => {
   const {prop} = props
 
   return (
-  <View className={``}>
+    <View className={``}>
 
-  </View>
+    </View>
   );
 };
 ```
-
 
 <br/>
 
