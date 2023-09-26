@@ -4,7 +4,7 @@ These live templates are created in the way I like to use in my daily work
 flow, I prefer to have my types at the top of the file and I like to export 
 inline where I declare my component. 
 
-[React Shortcuts](#react-shortcuts)
+[React Shortcuts](#react-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 <br/>
