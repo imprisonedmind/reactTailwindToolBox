@@ -11,7 +11,7 @@ inline where I declare my component.
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
-```fc```
+```rfc```
 Creates a simple Functional Component - Uses current filename without extension
 ```javascript
 export default function FileName() {
@@ -22,7 +22,7 @@ export default function FileName() {
   );
 };
 ```
-```tfc```
+```rtfc```
 Creates a Functional Typed Component - Uses current filename without extension
 ```typescript jsx
 import {FC} from "react";
@@ -113,6 +113,20 @@ export const ComponentName: FunctionComponent<Props> = (props) => {
   );
 };
 ```
+```nwview```
+Creates a styled NativeWind ```<View>``` with ClassName
+```typescript jsx
+<View className={``}>
+
+</View>
+```
+```nwtext```
+Creates a styled NativeWind ```<Text>``` with ClassName
+```typescript jsx
+<Text className={``}>
+
+</Text>
+```
 
 <br/>
 
@@ -134,21 +148,21 @@ Creates an ```in line AND``` operation for ```class``` styling based on a ```val
 ```tsx
 ${value && ""}
 ```
-```div```
+```twdiv```
 Creates a styled div with flex
 ```tsx
 <div className={`flex`}>
 
 </div>
 ```
-```row```
+```twrow```
 Creates a styled row
 ```tsx
 <div className={`flex flex-row gap-4`}>
 
 </div>
 ```
-```col```
+```twcol```
 Creates a styled column
 ```tsx
 <div className={`flex flex-col gap-4`}>
