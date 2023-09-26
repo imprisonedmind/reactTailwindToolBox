@@ -1,4 +1,4 @@
-# Lukes' React & Tailwind ToolBox
+# Luke's React & Tailwind ToolBox
 An opinionated React & Tailwind live template for IntelliJ products. <br/>
 These live templates are created in the way I like to use in my daily work
 flow, I prefer to have my types at the top of the file and I like to export 
@@ -13,7 +13,7 @@ inline where I declare my component.
 ### React Shortcuts
 ```rfc```
 Creates a simple Functional Component - Uses current filename without extension
-```typescript
+```javascript
 export default function FileName() {
   return (
     <div className={``}>
@@ -24,7 +24,7 @@ export default function FileName() {
 ```
 ```rtfc```
 Creates a Functional Typed Component - Uses current filename without extension
-```typescript
+```typescript jsx
 import {FC} from "react";
 
 interface FileNameProps {
@@ -80,7 +80,7 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 ### React Native Shortcuts
 ```rnftc```
 Creates a simple Functional Component - Uses current filename without extension
-```typescript
+```typescript jsx
 import {FunctionComponent} from "react";
 import {View} from "react-native";
 
