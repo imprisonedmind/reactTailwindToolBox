@@ -171,7 +171,7 @@ Creates a styled column
 
 </div>
 ```
-```twlt```
+```twt```
 Creates an ```in line TERNARY``` operation for ```class``` styling based
 on a ```value```
 ```tsx
