@@ -1,5 +1,5 @@
 <templateSet group="lukesReactToolBox">
-    <template name="ftc" value="import React from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: React.FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};&#10;" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
+    <template name="ftc" value="import {FC} from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="JAVA_SCRIPT" value="true" />
