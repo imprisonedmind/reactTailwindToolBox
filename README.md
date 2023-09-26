@@ -150,23 +150,6 @@ Creates a styled ```AND``` operation for ```<View>``` rendering with className
 <br/>
 
 ### Tailwind Shortcuts
-```ilt```
-Creates an ```in line TERNARY``` operation for ```class``` styling based 
-on a ```value```
-```tsx
-${value ? "" : ""}
-```
-```ilor```
-Creates an ```in line OR``` operation for ```class``` styling based on a ```nullable 
-value```
-```tsx
-${value || ""}
-```
-```ila```
-Creates an ```in line AND``` operation for ```class``` styling based on a ```value```
-```tsx
-${value && ""}
-```
 ```twdiv```
 Creates a styled div with flex
 ```tsx
@@ -187,6 +170,23 @@ Creates a styled column
 <div className={`flex flex-col gap-4`}>
 
 </div>
+```
+```ilt```
+Creates an ```in line TERNARY``` operation for ```class``` styling based
+on a ```value```
+```tsx
+${value ? "" : ""}
+```
+```ilor```
+Creates an ```in line OR``` operation for ```class``` styling based on a ```nullable
+value```
+```tsx
+${value || ""}
+```
+```ila```
+Creates an ```in line AND``` operation for ```class``` styling based on a ```value```
+```tsx
+${value && ""}
 ```
 
 
