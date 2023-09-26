@@ -23,7 +23,7 @@ export default function FileName() {
 };
 ```
 ```rtfc```
-Creates a Functional Typed Component - Uses current filename without extension
+Creates a Typed Functional Component - Uses current filename without extension
 ```typescript jsx
 import {FC} from "react";
 
