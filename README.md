@@ -7,11 +7,11 @@ inline where I declare my component.
 <br/>
 
 [React Shortcuts](#react-shortcuts) |
-[React Native Shortcuts](#react-native-shortcuts) |
+[NativeWind Shortcuts](#react-native-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
-```fc```
+```rfc```
 Creates a simple Functional Component - Uses current filename without extension
 ```typescript
 export default function FileName() {
@@ -22,7 +22,7 @@ export default function FileName() {
   );
 };
 ```
-```ftc```
+```rtfc```
 Creates a Functional Typed Component - Uses current filename without extension
 ```typescript
 import {FC} from "react";
@@ -85,7 +85,7 @@ import {FunctionComponent} from "react";
 import {View} from "react-native";
 
 interface OwnProps {
-	prop: string;
+  prop: string;
 }
 
 type Props = OwnProps;
