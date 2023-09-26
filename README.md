@@ -10,21 +10,21 @@ inline where I declare my component.
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
-```rftc```
-Creates a React Functional Typed Component
+```ftc```
+Creates a Functional Typed Component - Uses current filename without extension
 ```typescript
-import React from "react";
+import {FC} from "react";
 
-interface $ComponentName$Props {
-  prop: string;
+interface $FileName$Props {
+	prop: string;
 }
 
-export const $ComponentName$: React.FC<$ComponentName$Props> = (props) => {
+export const $FileName$: FC<$FileName$Props> = (props) => {
   const { prop } = props;
 
   return (
     <div className={``}>
-      
+
     </div>
   );
 };
