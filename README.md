@@ -90,7 +90,7 @@ interface OwnProps {
 
 type Props = OwnProps;
 
-export const $ComponentName$: FunctionComponent<Props> = (props) => {
+export const ComponentName: FunctionComponent<Props> = (props) => {
   const {prop} = props
 
   return (
