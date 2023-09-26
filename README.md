@@ -78,7 +78,7 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 <br/>
 
 ### React Native Shortcuts
-```rnftc```
+```rntfc```
 Creates a simple Functional Component - Uses current filename without extension
 ```typescript jsx
 import {FunctionComponent} from "react";
