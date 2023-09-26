@@ -67,18 +67,19 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 
 ### Tailwind Shortcuts
 ```ilt```
-Creates an in line ```TERNARY``` operation for ```class``` styling based 
+Creates an ```in line TERNARY``` operation for ```class``` styling based 
 on a ```value```
 ```tsx
 ${value ? "" : ""}
 ```
 ```ilor```
-Creates an in line ```OR``` operation for ```class``` styling based on a ```nullable value```
+Creates an ```in line OR``` operation for ```class``` styling based on a ```nullable 
+value```
 ```tsx
 ${value || ""}
 ```
 ```ila```
-Creates an in line ```AND``` operation for ```class``` styling based on a ```value```
+Creates an ```in line AND``` operation for ```class``` styling based on a ```value```
 ```tsx
 ${value && ""}
 ```
