@@ -7,6 +7,7 @@ inline where I declare my component.
 <br/>
 
 [React Shortcuts](#react-shortcuts) |
+[React Native Shortcuts](#react-native-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
 ### React Shortcuts
@@ -73,6 +74,33 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 ```tsx
 {value && (<div className={``}></div>)}
 ```
+
+<br/>
+
+### React Native Shortcuts
+```rnftc```
+Creates a simple Functional Component - Uses current filename without extension
+```typescript
+import {FunctionComponent} from "react";
+import {View} from "react-native";
+
+interface OwnProps {
+	prop: string;
+}
+
+type Props = OwnProps;
+
+export const $ComponentName$: FunctionComponent<Props> = (props) => {
+  const {prop} = props
+
+  return (
+  <View className={``}>
+
+  </View>
+  );
+};
+```
+
 
 <br/>
 
