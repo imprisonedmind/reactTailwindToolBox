@@ -63,4 +63,10 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
+    <template name="fc" value="export default function $ComponentName$() {&#10;  return (&#10;    &lt;div className={``}&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};" description="Creates a simple Functional Component" toReformat="false" toShortenFQNames="true">
+        <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
 </templateSet>
