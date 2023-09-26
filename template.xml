@@ -15,7 +15,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="uses" value="const [state, setState] = useState(null)" description="useState with no value" toReformat="false" toShortenFQNames="true">
+    <template name="uses" value="const [state, setState] = useState(null)" description="useState with null value" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
@@ -35,7 +35,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="twtern" value="${value ? &quot;&quot; : &quot;&quot;}" description="Crates an Inline Turnary for class styling based on value" toReformat="false" toShortenFQNames="true">
+    <template name="twtern" value="${value ? &quot;&quot; : &quot;&quot;}" description="Creates an Inline Ternary for class styling based on value" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="HTML" value="true" />
             <option name="JAVA_SCRIPT" value="true" />
@@ -47,7 +47,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="twand" value="${value &amp;&amp; &quot;&quot;}" description="Creates and inline AND operation for class styling based on a value" toReformat="false" toShortenFQNames="true">
+    <template name="twand" value="${value &amp;&amp; &quot;&quot;}" description="Creates an inline AND operation for class styling based on a value" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="HTML" value="true" />
             <option name="JAVA_SCRIPT" value="true" />
@@ -86,7 +86,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="nwtext" value="&lt;Text className={``}&gt;&#10;&#10;&lt;/Text&gt;" description="Creates a NativeWind Text with classNames" toReformat="false" toShortenFQNames="true">
+    <template name="nwtext" value="&lt;Text className={``}&gt;&#10;&#10;&lt;/Text&gt;" description="Creates a NativeWind Text with className" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
@@ -96,7 +96,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="nwand" value="{value &amp;&amp; (&lt;View className={``}&gt;&lt;/View&gt;)}" description="Crreated a NativeWind AND Operation for &lt;View&gt;" toReformat="false" toShortenFQNames="true">
+    <template name="nwand" value="{value &amp;&amp; (&lt;View className={``}&gt;&lt;/View&gt;)}" description="Creates a NativeWind AND Operation for &lt;View&gt;" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
