@@ -6,14 +6,38 @@ inline where I declare my component.
 
 <br/>
 
-[React Shortcuts](#react-shortcuts) |
+[React Generic Shortcuts](#react-generic-shortcuts) |
+[React Web Shortcuts](#react-web-shortcuts) |
 [NativeWind Shortcuts](#native-wind-shortcuts) |
 [Tailwind Shortcuts](#tailwind-shortcuts)
 
-### React Shortcuts
+### React Generic Shortcuts
+```uses```
+Creates a useState with a null value
+```tsx
+const [state, setState] = useState(null)
+```
+```usee```
+Creates a styled useEffect with no deps
+```tsx
+useEffect(() => {
+    
+},[])
+```
+```af```
+Creates a styled arrow function
+```javascript
+const handleSomething = () => {
+
+};
+```
+
+<br/>
+
+### React Web Shortcuts
 ```rfc```
 Creates a simple Functional Component - Uses current filename without extension
-```javascript
+```jsx
 export default function FileName() {
   return (
     <div className={``}>
@@ -24,7 +48,7 @@ export default function FileName() {
 ```
 ```rtfc```
 Creates a Typed Functional Component - Uses current filename without extension
-```typescript jsx
+```tsx
 import {FC} from "react";
 
 interface FileNameProps {
@@ -41,27 +65,8 @@ export const FileName: FC<FileNameProps> = (props) => {
   );
 };
 ```
-```uses```
-Creates a useState with a null value
-```typescript
-const [state, setState] = useState(null)
-```
-```usee```
-Creates a styled useEffect with no deps
-```typescript
-useEffect(() => {
-    
-},[])
-```
-```af```
-Creates a styled arrow function
-```typescript
-const handleSomething = () => {
-
-};
-```
-```turn```
-Creates a styled ```TERNARY``` operation for ```<div>``` rendering
+```rturn```
+Creates a styled ```TERNARY``` operation for ```<div>``` rendering with className
 ```tsx
 {value ? (
   <div className={``}></div>
@@ -69,8 +74,8 @@ Creates a styled ```TERNARY``` operation for ```<div>``` rendering
   <div className={``}></div>
 )}
 ```
-```and```
-Creates a styled ```AND``` operation for ```<div>``` rendering
+```rand```
+Creates a styled ```AND``` operation for ```<div>``` rendering with className
 ```tsx
 {value && (<div className={``}></div>)}
 ```
@@ -80,7 +85,7 @@ Creates a styled ```AND``` operation for ```<div>``` rendering
 ### Native Wind Shortcuts
 ```nwfc```
 Creates a NativeWind Simple Functional Component - Uses current filename without extension
-```javascript jsx
+```tsx
 import {View, Text} from "react-native";
 
 export default function TestFile() {
@@ -93,7 +98,7 @@ export default function TestFile() {
 ```
 ```nwtfc```
 Creates a NativeWind Typed Functional Component - Uses current filename without extension
-```typescript jsx
+```tsx
 import {FunctionComponent} from "react";
 import {View, Text} from "react-native";
 
@@ -115,17 +120,31 @@ export const ComponentName: FunctionComponent<Props> = (props) => {
 ```
 ```nwview```
 Creates a styled NativeWind ```<View>``` with ClassName
-```typescript jsx
+```tsx
 <View className={``}>
 
 </View>
 ```
 ```nwtext```
 Creates a styled NativeWind ```<Text>``` with ClassName
-```typescript jsx
+```tsx
 <Text className={``}>
 
 </Text>
+```
+```nwturn```
+Creates a styled ```TERNARY``` operation for ```<View>``` rendering with className
+```tsx
+{value ? (
+  <View className={``}></View>
+) : (
+  <View className={``}></View>
+)}
+```
+```nwand```
+Creates a styled ```AND``` operation for ```<View>``` rendering with className
+```tsx
+{value && (<div className={``}></div>)}
 ```
 
 <br/>
