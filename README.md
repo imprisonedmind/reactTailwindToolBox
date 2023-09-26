@@ -183,7 +183,7 @@ value```
 ```tsx
 ${value || ""}
 ```
-```twa```
+```twand```
 Creates an ```in line AND``` operation for ```class``` styling based on a ```value```
 ```tsx
 ${value && ""}
