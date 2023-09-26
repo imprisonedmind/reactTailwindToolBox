@@ -1,4 +1,4 @@
-<templateSet group="lukesReactToolBoxLocal">
+<templateSet group="lukesReactToolBox">
     <template name="ftc" value="import React from &quot;react&quot;;&#10;&#10;interface $ComponentName$Props {&#10;  prop: string;&#10;}&#10;&#10;export const $ComponentName$: React.FC&lt;$ComponentName$Props&gt; = (props) =&gt; {&#10;  const { prop } = props;&#10;&#10;  return (&#10;    &lt;div className={``}&gt;&#10;      &#10;    &lt;/div&gt;&#10;  );&#10;};&#10;" description="Typed React Functional Component with Tailwind div" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -21,6 +21,44 @@
         </context>
     </template>
     <template name="div" value="&lt;div className={`flex`}&gt;&#10;&#10;&lt;/div&gt;" description="Div with Tailwind Flex" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="turn" value="{value ? (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;) : (&#10;  &lt;div className={``}&gt;&lt;/div&gt;&#10;)}" description="Creates a styled Ternary operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="and" value="{value &amp;&amp; (&lt;div className={``}&gt;&lt;/div&gt;)}" description="Creates a styled AND operation for &lt;div&gt; rendering" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="ilt" value="${value ? &quot;&quot; : &quot;&quot;}" description="Crates an Inline Turnary for class styling based on value" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML" value="true" />
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="ilor" value="${value || &quot;&quot;}" description="Creates an inline OR operation for class styling based on a nullable values" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML" value="true" />
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="ila" value="${value &amp;&amp; &quot;&quot;}" description="Creates and inline AND operation for class styling based on a value" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML" value="true" />
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="row" value="&lt;div className={`flex flex-row gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates a Tailwind row" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="col" value="&lt;div className={`flex flex-col gap-4`}&gt;&#10;&#10;&lt;/div&gt;" description="Creates  a Tailwind column" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_SCRIPT" value="true" />
         </context>
