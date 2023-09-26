@@ -65,7 +65,7 @@ export const FileName: FC<FileNameProps> = (props) => {
   );
 };
 ```
-```rturn```
+```rtern```
 Creates a styled ```TERNARY``` operation for ```<div>``` rendering with className
 ```tsx
 {value ? (
@@ -132,7 +132,7 @@ Creates a styled NativeWind ```<Text>``` with ClassName
 
 </Text>
 ```
-```nwturn```
+```nwtern```
 Creates a styled ```TERNARY``` operation for ```<View>``` rendering with className
 ```tsx
 {value ? (
@@ -144,7 +144,7 @@ Creates a styled ```TERNARY``` operation for ```<View>``` rendering with classNa
 ```nwand```
 Creates a styled ```AND``` operation for ```<View>``` rendering with className
 ```tsx
-{value && (<div className={``}></div>)}
+{value && (<View className={``}></View>)}
 ```
 
 <br/>
@@ -171,7 +171,7 @@ Creates a styled column
 
 </div>
 ```
-```twt```
+```twtern```
 Creates an ```in line TERNARY``` operation for ```class``` styling based
 on a ```value```
 ```tsx
