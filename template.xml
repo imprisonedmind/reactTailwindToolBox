@@ -69,7 +69,7 @@
             <option name="JAVA_SCRIPT" value="true" />
         </context>
     </template>
-    <template name="nwtfc" value="import {FunctionComponent} from &quot;react&quot;;&#10;import {View, Text} from &quot;react-native&quot;;&#10;&#10;interface OwnProps {&#10;  prop: string;&#10;}&#10;&#10;type Props = OwnProps;&#10;&#10;export const $ComponentName$: FunctionComponent&lt;Props&gt; = (props) =&gt; {&#10;  const {prop} = props&#10;&#10;  return (&#10;    &lt;View className={``}&gt;&#10;&#10;    &lt;/View&gt;&#10;  );&#10;};" description="Creates a NativeWind Type Functional Component" toReformat="false" toShortenFQNames="true">
+    <template name="nwtfc" value="import {FunctionComponent} from &quot;react&quot;;&#10;import {View, Text, ViewStyle} from &quot;react-native&quot;;&#10;&#10;interface OwnProps {&#10;  style: ViewStyle;&#10;}&#10;&#10;type Props = OwnProps;&#10;&#10;export const $ComponentName$: FunctionComponent&lt;Props&gt; = (props) =&gt; {&#10;  const {style} = props&#10;&#10;  return (&#10;    &lt;View style={style} className={``}&gt;&#10;&#10;    &lt;/View&gt;&#10;  );&#10;};" description="Creates a NativeWind Type Functional Component" toReformat="false" toShortenFQNames="true">
         <variable name="ComponentName" expression="capitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="JAVA_SCRIPT" value="true" />
