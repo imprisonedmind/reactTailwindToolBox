@@ -100,19 +100,19 @@ export default function TestFile() {
 Creates a NativeWind Typed Functional Component - Uses current filename without extension
 ```tsx
 import {FunctionComponent} from "react";
-import {View, Text} from "react-native";
+import {View, Text, ViewStyle} from "react-native";
 
 interface OwnProps {
-  prop: string;
+  view: ViewStyle;
 }
 
 type Props = OwnProps;
 
 export const ComponentName: FunctionComponent<Props> = (props) => {
-  const {prop} = props
+  const {view} = props
 
   return (
-    <View className={``}>
+    <View style={style} className={``}>
 
     </View>
   );
