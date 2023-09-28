@@ -103,13 +103,13 @@ import {FunctionComponent} from "react";
 import {View, Text, ViewStyle} from "react-native";
 
 interface OwnProps {
-  view: ViewStyle;
+  style: ViewStyle;
 }
 
 type Props = OwnProps;
 
 export const ComponentName: FunctionComponent<Props> = (props) => {
-  const {view} = props
+  const {style} = props
 
   return (
     <View style={style} className={``}>
