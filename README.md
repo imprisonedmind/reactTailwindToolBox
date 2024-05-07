@@ -63,11 +63,11 @@ Creates a simple Functional Component - Uses current filename without extension
 
 ```jsx
 export default function FileName() {
-  return (
+    return (
     <div className={``}>
-
+    
     </div>
-  );
+    );
 };
 ```
 
@@ -124,11 +124,11 @@ Creates a NativeWind Simple Functional Component - Uses current filename without
 import {View, Text} from "react-native";
 
 export default function TestFile() {
-	return (
-		<View className={``}>
-
-		</View>
-	);
+    return (
+        <View className={``}>
+    
+        </View>
+    );
 };
 ```
 
@@ -140,7 +140,7 @@ import {FunctionComponent} from "react";
 import {View, Text, ViewStyle} from "react-native";
 
 interface OwnProps {
-	style: ViewStyle;
+  style: ViewStyle;
 }
 
 type Props = OwnProps;
