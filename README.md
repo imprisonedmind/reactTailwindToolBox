@@ -146,13 +146,13 @@ interface OwnProps {
 type Props = OwnProps;
 
 export const ComponentName: FunctionComponent<Props> = (props) => {
-	const {style} = props
-
-	return (
-		<View style={style} className={``}>
-
-		</View>
-	);
+    const {style} = props
+    
+    return (
+        <View style={style} className={``}>
+    
+        </View>
+    );
 };
 ```
 
