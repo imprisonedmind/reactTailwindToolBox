@@ -78,16 +78,16 @@ Creates a Typed Functional Component - Uses current filename without extension
 import {FC} from "react";
 
 interface FileNameProps {
-	prop: string;
+  prop: string;
 }
 
 export const FileName: FC<FileNameProps> = ({prop}) => {
 
-	return (
-		<div className={``}>
-			{prop}
-		</div>
-	);
+    return (
+        <div className={``}>
+            {prop}
+        </div>
+    );
 };
 ```
 
@@ -96,11 +96,11 @@ Creates a styled ```TERNARY``` operation for ```<div>``` rendering with classNam
 
 ```tsx
 {
-	value ? (
-		<div className={``}></div>
-	) : (
-		<div className={``}></div>
-	)
+    value ? (
+        <div className={``}></div>
+    ) : (
+        <div className={``}></div>
+    )
 }
 ```
 
