@@ -52,15 +52,14 @@ Creates a Typed Functional Component - Uses current filename without extension
 import {FC} from "react";
 
 interface FileNameProps {
-	prop: string;
+  prop: string;
 }
 
-export const FileName: FC<FileNameProps> = (props) => {
-  const { prop } = props;
+export const FileName: FC<FileNameProps> = ({prop}) => {
 
   return (
     <div className={``}>
-
+      {prop}
     </div>
   );
 };
